@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif&family=Inter&display=swap');
+
+header {
+  padding: 27px 63px;
+  border-bottom: 1px solid #004346;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Inria Serif', serif;
+  font-size: 40px;
+  font-weight: 400;
+  color: #000000;
+}
+
+header nav ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+header nav ul li a {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: #000000;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  color: #004346;
+}
