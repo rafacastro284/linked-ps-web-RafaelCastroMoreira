@@ -1,0 +1,120 @@
+.horario {
+  position: relative;
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 40px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.horario-flor {
+  position: absolute;
+  opacity: 0.8;
+  pointer-events: none;
+  user-select: none;
+  object-fit: contain;
+}
+
+.horario-flor--direita {
+  width: 1077px;
+  height: 917px;
+  top: -100px;
+  right: -300px;
+}
+
+.horario-flor--esquerda {
+  width: 1036px;
+  height: 1009px;
+  top: 150px;
+  left: -252px;
+}
+.horario-titulo-wrapper {
+  position: relative;
+  z-index: 1;
+  max-width: 1148px;
+  width: 100%;
+  text-align: center;
+}
+
+.horario-titulo {
+  font-family: 'Inria Serif', serif;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 1;
+  color: #004346;
+  margin: 0 0 16px;
+}
+
+.horario-subtitulo {
+  font-family: 'Inria Serif', serif;
+  font-weight: 400;
+  font-size: 32px;
+  color: #004346;
+  margin: 0 0 20px;
+}
+
+.horario-linha {
+  width: 243px;
+  border: none;
+  border-top: 1px solid #004346;
+  margin: 0 auto 40px;
+}
+
+.horario-card {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  padding: 48px 64px;
+  width: 100%;
+  max-width: 1047px;
+  min-height: 509px;
+  border-radius: 16px;
+  border: 1px solid #004346;
+  background-color: rgba(255, 255, 255, 0.47);
+  box-shadow: 0 4px 4px rgba(0,0,0,0.25), 0 -4px 4px rgba(0,0,0,0.25);
+  box-sizing: border-box;
+}
+
+.horario-clock {
+  flex-shrink: 0;
+  width: 200px;
+  height: auto;
+  object-fit: contain;
+}
+
+.horario-tabela {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #004346;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.horario-tabela tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.horario-tabela tr:last-child {
+  border-bottom: none;
+}
+
+.horario-tabela td {
+  font-family: 'Inria Serif', serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #ffffff;
+  padding: 20px 24px;
+}
+
+.horario-tabela td:last-child {
+  text-align: right;
+}
+
+.horario-tabela .fechado {
+  font-weight: 700;
+}
