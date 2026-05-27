@@ -5,7 +5,7 @@ import florDireita from './assets/flor-fundo-dir.png'
 
 function Horario() {
   return (
-    <section className='horario'>
+    <section id="horarios" className='horario'>
       <img src={florEsquerda} alt='' className='horario-flor horario-flor--esquerda' />
       <img src={florDireita} alt='' className='horario-flor horario-flor--direita' />
 

@@ -88,7 +88,8 @@
 }
 
 .horario-tabela {
-  width: 100%;
+  width: 589px;
+  height: 304px;
   border-collapse: collapse;
   background-color: #004346;
   border-radius: 12px;

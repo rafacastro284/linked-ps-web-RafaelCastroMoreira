@@ -2,7 +2,7 @@ import './Servicos.css'
 
 function Servicos() {
   return (
-    <section className="servicos">
+    <section id="servicos" className="servicos">
       <div className="servicos-inner">
         <h2 className="servicos-titulo">Nossos Serviços.</h2>
         <p className="servicos-subtitulo">
