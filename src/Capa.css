@@ -117,7 +117,7 @@
 }
 
 .capa-imagem img {
-  width: 100%;
+  width: 980px;
   height: 100%;
   object-fit: cover;
   object-position: left;
