@@ -1,5 +1,5 @@
 import './Feedbacks.css'
-import feedbacksImg from './assets/feedbacks.png'
+import feedbacksImg from '../assets/feedbacks.png'
 
 function Feedbacks() {
   return (

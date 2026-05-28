@@ -1,5 +1,5 @@
 import './Capa.css'
-import psicologa from './assets/psicologa.png'
+import psicologa from '../assets/psicologa.png'
 
 function Capa() {
   return (

@@ -1,7 +1,7 @@
 import './Horario.css'
 import clock from './assets/clock.png'
-import florEsquerda from './assets/flor-fundo-esq.png'
-import florDireita from './assets/flor-fundo-dir.png'
+import florEsquerda from './assets/flor2-fundo-esq.png'
+import florDireita from './assets/flor1-fundo-dir.png'
 
 function Horario() {
   return (

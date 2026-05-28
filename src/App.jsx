@@ -1,10 +1,10 @@
-import Header from './Header'
-import Capa from './Capa'
-import Servicos from './Servicos'
-import Horario from './Horario'
-import Feedbacks from './Feedbacks'
-import Contato from './Contato'
-import Footer from './Footer'
+import Header from './Header/Header.jsx'
+import Capa from './Capa/Capa.jsx'
+import Servicos from './Servicos/Servicos.jsx'
+import Horario from './Horario/Horario.jsx'
+import Feedbacks from './Feedbacks/Feedbacks.jsx'
+import Contato from './Contato/Contato.jsx'
+import Footer from './Footer/Footer.jsx'
 
 function App() {
   return (
