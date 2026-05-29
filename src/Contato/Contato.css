@@ -1,0 +1,214 @@
+.contato {
+  padding: 60px 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  background-color: #fff;
+  font-family: 'Inria Serif', serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.contato-flor {
+  position: absolute;
+  opacity: 1.5;
+  pointer-events: none;
+  z-index: 0;
+  width: auto;
+  height: auto;
+}
+
+.contato-flor-esq {
+  left: -80px;
+  top: -130px;
+}
+
+.contato-flor-dir {
+  right: -120px;
+  bottom: -380px;
+}
+
+
+.contato-localizacao {
+  display: flex;
+  gap: 200px;
+  align-items: stretch;
+  position: relative;
+  z-index: 2;
+}
+
+.contato-card {
+  background-color: #004346;
+  color: #ffffff;
+  padding: 70px 60px 50px 60px;
+  border-radius: 16px;
+  width: 637px;
+  min-height: 586px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contato-card h2 {
+  font-family: 'Inria Serif', serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+
+.contato-card p {
+  font-family: 'Inria Serif', serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.contato-endereco-titulo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.contato-endereco-titulo span {
+  font-family: 'Inria Serif', serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.contato-localizacao-icon {
+  width: 46px;
+  height: 43px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.contato-mapa {
+  border-radius: 16px;
+  overflow: hidden;
+  width: 869px;
+  min-height: 585px;
+  box-shadow:
+    1px 1px 1px rgba(0, 0, 0, 0.25),
+    -1px -1px px rgba(0, 0, 0, 0.25);
+}
+
+.contato-mapa img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contato-formulario {
+  background-color: rgba(255, 255, 255, 0.47);
+  border: 1px solid #004346;
+  border-radius: 16px;
+  padding: 38px 46px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  z-index: 2;
+  height: 505px;
+  max-width: 1176px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contato-form-topo {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.contato-form-titulo {
+  font-family: 'Inria Serif', serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #004346;
+  white-space: nowrap;
+  padding-right: 24px;
+  border-right: 2px solid #004346;
+}
+
+.contato-form-subtitulo {
+  font-family: 'Inria Serif', serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: rgba(0, 67, 70, 0.49);
+  white-space: nowrap;
+}
+
+.contato-form {
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+}
+
+.contato-input-grupo {
+  background-color: #004346;
+  border-radius: 16px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  gap: 10px;
+  width: 100%;
+}
+
+.contato-input-grupo span {
+  font-family: 'Inria Serif', serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.contato-input-grupo input {
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: #ffffff;
+  font-family: 'Inria Serif', serif;
+  font-size: 16px;
+}
+
+.contato-btn-enviar {
+  align-self: center;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  border: 1px solid #004346;
+  border-radius: 20px;
+  padding: 10px 28px;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: #004346;
+  letter-spacing: 1px;
+  transition: background 0.3s, color 0.3s;
+  margin-top: 10px;
+}
+
+.contato-btn-enviar:hover {
+  background-color: #004346;
+  color: #ffffff;
+}
+
+.contato-btn-circulo {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid #004346;
+  display: inline-block;
+  transition: border-color 0.3s;
+}
+
+.contato-btn-enviar:hover .contato-btn-circulo {
+  border-color: #ffffff;
+}
