@@ -8,8 +8,10 @@ function Contato() {
   return (
     <section id="contato" className="contato">
 
-      <img src={florEsq} alt="" className="contato-flor contato-flor-esq" />
-      <img src={florDir} alt="" className="contato-flor contato-flor-dir" />
+      <div className="contato-flores">
+        <img src={florEsq} alt="" className="contato-flor contato-flor-esq" />
+        <img src={florDir} alt="" className="contato-flor contato-flor-dir" />
+      </div>
 
       <div className="contato-localizacao">
         <div className="contato-card">
@@ -24,10 +26,13 @@ function Contato() {
           <p>CEP: 40028922</p>
         </div>
 
-        <div className="contato-mapa">
-          <img src={mapa} alt="Mapa de localização" />
+        <div className="contato-mapa-wrapper">
+          <div className="contato-mapa">
+            <img src={mapa} alt="Mapa de localização" />
+          </div>
         </div>
-      </div>
+
+      </div> {/* fechamento contato-localizacao */}
 
       <div className="contato-formulario">
         <div className="contato-form-topo">

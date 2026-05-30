@@ -80,3 +80,39 @@
   margin-top: 8px;
   padding-left: 16px;
 }
+
+@media (max-width: 768px) {
+  .feedbacks {
+    flex-direction: column;
+    padding: 60px 24px;
+    min-height: auto;
+  }
+
+  .feedbacks-texto {
+    width: 100%;
+  }
+
+  .feedbacks-titulo { font-size: 48px; }
+  .feedbacks-subtitulo { font-size: 20px; }
+
+  .feedbacks-item {
+    width: 100%;
+  }
+
+  .feedbacks-item span:last-child {
+    font-size: 18px;
+  }
+
+  .feedbacks-bullet {
+    font-size: 20px;
+  }
+
+  .feedbacks-imagem {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    height: 300px;
+    margin-top: 40px;
+  }
+}

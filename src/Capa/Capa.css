@@ -32,6 +32,7 @@
   padding-top: 200px;
   padding-bottom: 60px;
 }
+
 .capa-texto h1 {
   font-family: 'Inria Serif', serif;
   font-size: 64px;
@@ -74,8 +75,10 @@
   transition: background-color 0.3s;
 }
 
-.btn-agendar:hover {
+.btn-agendar:hover,
+.btn-agendar:focus {
   background-color: #002e30;
+  outline: 2px solid #ffffff;
 }
 
 .btn-saiba {
@@ -96,8 +99,10 @@
   transition: background-color 0.3s;
 }
 
-.btn-saiba:hover {
+.btn-saiba:hover,
+.btn-saiba:focus {
   background-color: #e8f0ef;
+  outline: 2px solid #004346;
 }
 
 .btn-circulo {
@@ -121,4 +126,47 @@
   height: 100%;
   object-fit: cover;
   object-position: left;
+}
+
+@media (max-width: 768px) {
+  .capa {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .capa-esquerda {
+    max-width: 100%;
+  }
+
+  .capa-subtitulo {
+    font-size: 18px;
+    padding: 24px 24px 0;
+  }
+
+  .capa-texto {
+    padding: 32px 24px 40px;
+  }
+
+  .capa-texto h1 {
+    font-size: 40px;
+  }
+
+  .capa-descricao {
+    font-size: 20px;
+  }
+
+  .capa-botoes {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .btn-agendar,
+  .btn-saiba {
+    width: 100%;
+  }
+
+  .capa-imagem img {
+    width: 100%;
+    height: 300px;
+  }
 }
