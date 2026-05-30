@@ -286,5 +286,13 @@
   right: -60px;
   bottom: -100px;
 }
+.contato-mapa-wrapper {
+    width: 100%;
+  }
+
+  .contato-mapa {
+    width: 100%;
+    height: 300px;
+  }
 
 }
