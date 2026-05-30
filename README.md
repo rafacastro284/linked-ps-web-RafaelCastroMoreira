@@ -47,6 +47,9 @@ Abra [http://localhost:5173](http://localhost:5173)
 - Google Fonts (Inria Serif e Inter)
 
 ## Estrutura do projeto
+
+'''
+
 src/
 assets/        # Imagens e ícones
 Header/        # Cabeçalho
@@ -59,6 +62,8 @@ Footer/        # Rodapé
 App.jsx        # Componente raiz que organiza todos os outros componentes
 App.css        # Estilos globais da aplicação
 main.jsx       # Ponto de entrada da aplicação
+
+'''
 
 
 ## Decisões técnicas
