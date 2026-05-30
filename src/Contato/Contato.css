@@ -25,7 +25,7 @@
 }
 
 .contato-flor-esq {
-  left: -80px;
+  left: -100px;
   top: -130px;
 }
 
@@ -109,7 +109,7 @@
   padding: 38px 46px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
   position: relative;
   z-index: 2;
   height: auto;
