@@ -64,6 +64,12 @@
   object-fit: contain;
 }
 
+.footer-social-item:focus {
+  opacity: 0.7;
+  outline: 2px solid #ffffff;
+  border-radius: 4px;
+}
+
 @media (max-width: 768px) {
   .footer {
     padding: 40px 24px;

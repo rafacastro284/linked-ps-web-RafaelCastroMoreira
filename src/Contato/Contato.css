@@ -193,7 +193,7 @@
 .contato-btn-enviar:focus {
   background-color: #004346;
   color: #ffffff;
-  outline: none;
+  outline: 2px solid #002e30;
 }
 
 .contato-btn-circulo {
@@ -209,6 +209,11 @@
 .contato-btn-enviar:focus .contato-btn-circulo {
   border-color: #ffffff;
 }
+.contato-input-grupo:focus-within {
+  outline: 2px solid #ffffff;
+  border-radius: 16px;
+}
+ 
 
 @media (max-width: 768px) {
   .contato {
@@ -267,7 +272,7 @@
     font-size: 16px;
   }
 
-  .contato-btn-enviar {
+ .contato-btn-enviar {
     font-size: 20px;
   }
 }
