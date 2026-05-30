@@ -6,6 +6,10 @@ Rafael Castro Moreira
 ## Descrição
 Landing page desenvolvida para um consultório de psicologia e psicoterapia, como parte do processo seletivo da Linked Empresa Júnior. O projeto foi implementado a partir de um layout fornecido no Figma, com fidelidade ao design, responsividade e boas práticas de código.
 
+## Deploy
+
+Acesse o projeto online: [linked-ps-web-rafaelcastromoreira.vercel.app](https://linked-ps-web-rafaelcastromoreira.vercel.app)
+
 ## Como rodar o projeto localmente
 
 ### Pré-requisitos
