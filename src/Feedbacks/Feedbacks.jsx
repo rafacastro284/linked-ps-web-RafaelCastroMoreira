@@ -9,6 +9,7 @@ function Feedbacks() {
         <h2 className="feedbacks-titulo">Feedbacks.</h2>
         <p className="feedbacks-subtitulo">Quem conhece, confia.</p>
         <hr className="feedbacks-linha" />
+
         <p className="feedbacks-item">
           <span className="feedbacks-bullet">•</span>
           <span>

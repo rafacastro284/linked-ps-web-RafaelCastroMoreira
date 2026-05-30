@@ -27,11 +27,11 @@ function Footer() {
       {/* ACESSO RÁPIDO */}
       <div className="footer-coluna">
         <h3 className="footer-titulo">ACESSO RÁPIDO:</h3>
-        <span href="#inicio"    className="footer-link">Início</span>
-        <span href="#servicos"  className="footer-link">Nossos Serviços</span>
-        <span href="#horarios"  className="footer-link">Horários</span>
-        <span href="#feedbacks" className="footer-link">Feedbacks</span>
-        <span href="#contato"   className="footer-link">Contato</span>
+        <a href="#inicio"    className="footer-link">Início</a>
+        <a href="#servicos"  className="footer-link">Nossos Serviços</a>
+        <a href="#horarios"  className="footer-link">Horários</a>
+        <a href="#feedbacks" className="footer-link">Feedbacks</a>
+        <a href="#contato"   className="footer-link">Contato</a>
       </div>
 
       {/* SERVIÇOS */}
