@@ -20,7 +20,7 @@ Acesse o projeto online: [linked-ps-web-rafaelcastromoreira.vercel.app](https://
 
 **1. Clone o repositório**
 ```bash
-git clone https://github.com/RafaelCastroMoreira/linked-ps-web-RafaelCastroMoreira.git
+git clone https://github.com/rafacastro284/linked-ps-web-RafaelCastroMoreira.git
 ```
 
 **2. Entre na pasta do projeto**
