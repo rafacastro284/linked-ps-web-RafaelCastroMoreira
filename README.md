@@ -1,16 +1,68 @@
-# React + Vite
+# Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Nome:
+Rafael Castro Moreira
 
-Currently, two official plugins are available:
+## Descrição
+Landing page desenvolvida para um consultório de psicologia e psicoterapia, como parte do processo seletivo da Linked Empresa Júnior. O projeto foi implementado a partir de um layout fornecido no Figma, com fidelidade ao design, responsividade e boas práticas de código.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Como rodar o projeto localmente
 
-## React Compiler
+### Pré-requisitos
+- [Node.js](https://nodejs.org/) versão 18 ou superior instalado
+- npm (já vem junto com o Node.js)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Passos
 
-## Expanding the ESLint configuration
+**1. Clone o repositório**
+```bash
+git clone https://github.com/RafaelCastroMoreira/linked-ps-web-RafaelCastroMoreira.git
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**2. Entre na pasta do projeto**
+```bash
+cd linked-ps-web-RafaelCastroMoreira
+```
+
+**3. Instale as dependências**
+```bash
+npm install
+```
+
+**4. Inicie o servidor de desenvolvimento**
+```bash
+npm run dev
+```
+
+**5. Acesse no navegador**
+
+Abra [http://localhost:5173](http://localhost:5173)
+
+> ⚠️ Certifique-se de que nenhum outro serviço esteja usando a porta 5173.
+
+## Tecnologias utilizadas
+- React
+- Vite
+- CSS3
+- Google Fonts (Inria Serif e Inter)
+
+## Estrutura do projeto
+src/
+assets/        # Imagens e ícones
+Header/        # Cabeçalho
+Capa/          # Seção inicial
+Servicos/      # Seção de serviços
+Horario/       # Seção de horários
+Feedbacks/     # Seção de feedbacks
+Contato/       # Seção de contato
+Footer/        # Rodapé
+App.jsx        # Componente raiz que organiza todos os outros componentes
+App.css        # Estilos globais da aplicação
+main.jsx       # Ponto de entrada da aplicação
+
+
+## Decisões técnicas
+- Cada componente foi organizado em sua própria pasta com JSX e CSS separados, facilitando a manutenção e legibilidade do código.
+- As medidas e cores foram extraídas diretamente do Figma para a melhor fidelidade ao design.
+- A responsividade foi implementada com media queries para mobile (≤ 768px).
+- Formulário estático conforme permitido pelo enunciado.
