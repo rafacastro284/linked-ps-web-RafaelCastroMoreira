@@ -48,23 +48,20 @@ Abra [http://localhost:5173](http://localhost:5173)
 
 ## Estrutura do projeto
 
-'''
-
+```
 src/
-assets/        # Imagens e ícones
-Header/        # Cabeçalho
-Capa/          # Seção inicial
-Servicos/      # Seção de serviços
-Horario/       # Seção de horários
-Feedbacks/     # Seção de feedbacks
-Contato/       # Seção de contato
-Footer/        # Rodapé
-App.jsx        # Componente raiz que organiza todos os outros componentes
-App.css        # Estilos globais da aplicação
-main.jsx       # Ponto de entrada da aplicação
-
-'''
-
+├── assets/        # Imagens e ícones
+├── Header/        # Cabeçalho
+├── Capa/          # Seção inicial
+├── Servicos/      # Seção de serviços
+├── Horario/       # Seção de horários
+├── Feedbacks/     # Seção de feedbacks
+├── Contato/       # Seção de contato
+├── Footer/        # Rodapé
+├── App.jsx        # Componente raiz
+├── App.css        # Estilos globais
+└── main.jsx       # Ponto de entrada
+```
 
 ## Decisões técnicas
 - Cada componente foi organizado em sua própria pasta com JSX e CSS separados, facilitando a manutenção e legibilidade do código.
