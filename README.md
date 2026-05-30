@@ -8,7 +8,7 @@ Landing page desenvolvida para um consultório de psicologia e psicoterapia, com
 
 ## Deploy
 
-Acesse o projeto online: [linked-ps-web-rafaelcastromoreira.vercel.app](https://linked-ps-web-rafaelcastromoreira.vercel.app)
+Acesse o projeto online: [linked-ps-web-rafaelcastromoreira.vercel.app](https://linked-ps-web-rafael-castro-moreira.vercel.app/)
 
 ## Como rodar o projeto localmente
 
