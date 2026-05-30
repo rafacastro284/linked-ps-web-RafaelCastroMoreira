@@ -275,4 +275,16 @@
  .contato-btn-enviar {
     font-size: 20px;
   }
+  .contato-flor-esq {
+  width: 250px;
+  left: -60px;
+  top: -60px;
+}
+
+.contato-flor-dir {
+  width: 250px;
+  right: -60px;
+  bottom: -100px;
+}
+
 }
