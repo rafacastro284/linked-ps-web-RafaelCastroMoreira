@@ -70,5 +70,5 @@ src/
 ## Decisões técnicas
 - Cada componente foi organizado em sua própria pasta com JSX e CSS separados, facilitando a manutenção e legibilidade do código.
 - As medidas e cores foram extraídas diretamente do Figma para a melhor fidelidade ao design.
-- A responsividade foi implementada com media queries para mobile (≤ 768px).
+- A responsividade foi implementada com media queries para desktop (≥ 1024px) e para mobile (≤ 768px).
 - Formulário estático conforme permitido pelo enunciado.
