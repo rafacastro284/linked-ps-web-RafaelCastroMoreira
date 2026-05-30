@@ -9,6 +9,7 @@ function Feedbacks() {
         <h2 className="feedbacks-titulo">Feedbacks.</h2>
         <p className="feedbacks-subtitulo">Quem conhece, confia.</p>
         <hr className="feedbacks-linha" />
+
         <p className="feedbacks-item">
           <span className="feedbacks-bullet">•</span>
           <span>
@@ -122,10 +123,47 @@ export default Feedbacks.feedbacks {
   top: 153px;
   left: 1121px;
 }
+
 .feedbacks-cliente {
   display: block;
   margin-top: 8px;
   padding-left: 16px;
+}
+
+@media (max-width: 768px) {
+  .feedbacks {
+    flex-direction: column;
+    padding: 60px 24px;
+    min-height: auto;
+  }
+
+  .feedbacks-texto {
+    width: 100%;
+  }
+
+  .feedbacks-titulo { font-size: 48px; }
+  .feedbacks-subtitulo { font-size: 20px; }
+
+  .feedbacks-item {
+    width: 100%;
+  }
+
+  .feedbacks-item span:last-child {
+    font-size: 18px;
+  }
+
+  .feedbacks-bullet {
+    font-size: 20px;
+  }
+
+  .feedbacks-imagem {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    height: 300px;
+    margin-top: 40px;
+  }
 }.servicos {
   background-color: #004346;
   width: 100%;
@@ -181,8 +219,12 @@ export default Feedbacks.feedbacks {
 }
 
 @media (max-width: 768px) {
+  .servicos {
+    padding: 60px 24px;
+  }
+
   .servicos-titulo { font-size: 48px; }
-  .servicos-subtitulo { font-size: 22px; }
+  .servicos-subtitulo { font-size: 20px; }
   .servicos-corpo { font-size: 20px; }
 }import './Servicos.css'
 
@@ -286,6 +328,7 @@ export default Horario.horario {
   top: 150px;
   left: -252px;
 }
+
 .horario-titulo-wrapper {
   position: relative;
   z-index: 1;
@@ -373,6 +416,41 @@ export default Horario.horario {
 
 .horario-tabela .fechado {
   font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .horario {
+    padding: 60px 24px;
+  }
+
+  .horario-titulo { font-size: 48px; }
+  .horario-subtitulo { font-size: 20px; }
+
+  .horario-flor--direita,
+  .horario-flor--esquerda {
+    display: none;
+  }
+
+  .horario-card {
+    flex-direction: column;
+    padding: 32px 24px;
+    min-height: auto;
+    gap: 24px;
+  }
+
+  .horario-clock {
+    width: 120px;
+  }
+
+  .horario-tabela {
+    width: 100%;
+    height: auto;
+  }
+
+  .horario-tabela td {
+    font-size: 16px;
+    padding: 14px 16px;
+  }
 }import './Header.css'
 function Header() {
   return (
@@ -425,8 +503,36 @@ header nav ul li a {
   text-decoration: none;
 }
 
-header nav ul li a:hover {
+header nav ul li a:hover,
+header nav ul li a:focus {
   color: #004346;
+  outline: 2px solid #004346;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 20px 24px;
+  }
+
+  header nav {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .logo {
+    font-size: 28px;
+  }
+
+  header nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  header nav ul li a {
+    font-size: 18px;
+  }
 }import './Footer.css'
 import facebook from '../assets/facebook.png'
 import instagram from '../assets/instagram.png'
@@ -456,11 +562,11 @@ function Footer() {
       {/* ACESSO RÁPIDO */}
       <div className="footer-coluna">
         <h3 className="footer-titulo">ACESSO RÁPIDO:</h3>
-        <span href="#inicio"    className="footer-link">Início</span>
-        <span href="#servicos"  className="footer-link">Nossos Serviços</span>
-        <span href="#horarios"  className="footer-link">Horários</span>
-        <span href="#feedbacks" className="footer-link">Feedbacks</span>
-        <span href="#contato"   className="footer-link">Contato</span>
+        <a href="#inicio"    className="footer-link">Início</a>
+        <a href="#servicos"  className="footer-link">Nossos Serviços</a>
+        <a href="#horarios"  className="footer-link">Horários</a>
+        <a href="#feedbacks" className="footer-link">Feedbacks</a>
+        <a href="#contato"   className="footer-link">Contato</a>
       </div>
 
       {/* SERVIÇOS */}
@@ -510,10 +616,12 @@ export default Footer.footer {
   font-weight: 700;
   color: #ffffff;
   text-decoration: none;
+  cursor: pointer;
   transition: opacity 0.3s;
 }
 
-.footer-link:hover {
+.footer-link:hover,
+.footer-link:focus {
   opacity: 0.7;
 }
 
@@ -531,7 +639,8 @@ export default Footer.footer {
   transition: opacity 0.3s;
 }
 
-.footer-social-item:hover {
+.footer-social-item:hover,
+.footer-social-item:focus {
   opacity: 0.7;
 }
 
@@ -545,6 +654,33 @@ export default Footer.footer {
   width: 63px;
   height: 63px;
   object-fit: contain;
+}
+
+.footer-social-item:focus {
+  opacity: 0.7;
+  outline: 2px solid #ffffff;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 24px;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer-titulo { font-size: 24px; }
+  .footer-link   { font-size: 18px; }
+  .footer-texto  { font-size: 18px; }
+
+  .footer-social-item span {
+    font-size: 18px;
+  }
+
+  .footer-social-icon {
+    width: 40px;
+    height: 40px;
+  }
 }* {
   margin: 0;
   padding: 0;
@@ -658,6 +794,7 @@ export default Capa.capa {
   padding-top: 200px;
   padding-bottom: 60px;
 }
+
 .capa-texto h1 {
   font-family: 'Inria Serif', serif;
   font-size: 64px;
@@ -700,8 +837,10 @@ export default Capa.capa {
   transition: background-color 0.3s;
 }
 
-.btn-agendar:hover {
+.btn-agendar:hover,
+.btn-agendar:focus {
   background-color: #002e30;
+  outline: 2px solid #ffffff;
 }
 
 .btn-saiba {
@@ -722,8 +861,10 @@ export default Capa.capa {
   transition: background-color 0.3s;
 }
 
-.btn-saiba:hover {
+.btn-saiba:hover,
+.btn-saiba:focus {
   background-color: #e8f0ef;
+  outline: 2px solid #004346;
 }
 
 .btn-circulo {
@@ -747,6 +888,49 @@ export default Capa.capa {
   height: 100%;
   object-fit: cover;
   object-position: left;
+}
+
+@media (max-width: 768px) {
+  .capa {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .capa-esquerda {
+    max-width: 100%;
+  }
+
+  .capa-subtitulo {
+    font-size: 18px;
+    padding: 24px 24px 0;
+  }
+
+  .capa-texto {
+    padding: 32px 24px 40px;
+  }
+
+  .capa-texto h1 {
+    font-size: 40px;
+  }
+
+  .capa-descricao {
+    font-size: 20px;
+  }
+
+  .capa-botoes {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .btn-agendar,
+  .btn-saiba {
+    width: 100%;
+  }
+
+  .capa-imagem img {
+    width: 100%;
+    height: 300px;
+  }
 }import './Contato.css'
 import mapa from '../assets/mapa.png'
 import florEsq from '../assets/flor3-fundo-esq.png'
@@ -757,8 +941,10 @@ function Contato() {
   return (
     <section id="contato" className="contato">
 
-      <img src={florEsq} alt="" className="contato-flor contato-flor-esq" />
-      <img src={florDir} alt="" className="contato-flor contato-flor-dir" />
+      <div className="contato-flores">
+        <img src={florEsq} alt="" className="contato-flor contato-flor-esq" />
+        <img src={florDir} alt="" className="contato-flor contato-flor-dir" />
+      </div>
 
       <div className="contato-localizacao">
         <div className="contato-card">
@@ -773,10 +959,13 @@ function Contato() {
           <p>CEP: 40028922</p>
         </div>
 
-        <div className="contato-mapa">
-          <img src={mapa} alt="Mapa de localização" />
+        <div className="contato-mapa-wrapper">
+          <div className="contato-mapa">
+            <img src={mapa} alt="Mapa de localização" />
+          </div>
         </div>
-      </div>
+
+      </div> {/* fechamento contato-localizacao */}
 
       <div className="contato-formulario">
         <div className="contato-form-topo">
@@ -818,15 +1007,21 @@ export default Contato.contato {
   gap: 100px;
   background-color: #fff;
   font-family: 'Inria Serif', serif;
+  font-weight: 700;
   position: relative;
+}
+
+.contato-flores {
+  position: absolute;
+  inset: 0;
   overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
 }
 
 .contato-flor {
   position: absolute;
-  opacity: 1.5;
-  pointer-events: none;
-  z-index: 0;
+  opacity: 0.8;
   width: auto;
   height: auto;
 }
@@ -840,7 +1035,6 @@ export default Contato.contato {
   right: -120px;
   bottom: -380px;
 }
-
 
 .contato-localizacao {
   display: flex;
@@ -863,17 +1057,13 @@ export default Contato.contato {
 }
 
 .contato-card h2 {
-  font-family: 'Inria Serif', serif;
   font-size: 36px;
-  font-weight: 700;
   color: #ffffff;
   margin-bottom: 24px;
 }
 
 .contato-card p {
-  font-family: 'Inria Serif', serif;
   font-size: 36px;
-  font-weight: 700;
   color: #ffffff;
 }
 
@@ -885,9 +1075,7 @@ export default Contato.contato {
 }
 
 .contato-endereco-titulo span {
-  font-family: 'Inria Serif', serif;
   font-size: 36px;
-  font-weight: 700;
   color: #ffffff;
 }
 
@@ -898,20 +1086,22 @@ export default Contato.contato {
   filter: brightness(0) invert(1);
 }
 
+.contato-mapa-wrapper {
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.35);
+  border-radius: 16px;
+}
 .contato-mapa {
   border-radius: 16px;
-  overflow: hidden;
   width: 869px;
   min-height: 585px;
-  box-shadow:
-    1px 1px 1px rgba(0, 0, 0, 0.25),
-    -1px -1px px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
 }
 
 .contato-mapa img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .contato-formulario {
@@ -937,9 +1127,7 @@ export default Contato.contato {
 }
 
 .contato-form-titulo {
-  font-family: 'Inria Serif', serif;
   font-size: 36px;
-  font-weight: 700;
   color: #004346;
   white-space: nowrap;
   padding-right: 24px;
@@ -947,9 +1135,7 @@ export default Contato.contato {
 }
 
 .contato-form-subtitulo {
-  font-family: 'Inria Serif', serif;
   font-size: 24px;
-  font-weight: 700;
   color: rgba(0, 67, 70, 0.49);
   white-space: nowrap;
 }
@@ -972,8 +1158,6 @@ export default Contato.contato {
 }
 
 .contato-input-grupo span {
-  font-family: 'Inria Serif', serif;
-  font-weight: 700;
   font-size: 24px;
   color: #ffffff;
   white-space: nowrap;
@@ -985,7 +1169,6 @@ export default Contato.contato {
   outline: none;
   width: 100%;
   color: #ffffff;
-  font-family: 'Inria Serif', serif;
   font-size: 16px;
 }
 
@@ -1008,9 +1191,11 @@ export default Contato.contato {
   margin-top: 10px;
 }
 
-.contato-btn-enviar:hover {
+.contato-btn-enviar:hover,
+.contato-btn-enviar:focus {
   background-color: #004346;
   color: #ffffff;
+  outline: 2px solid #002e30;
 }
 
 .contato-btn-circulo {
@@ -1022,6 +1207,74 @@ export default Contato.contato {
   transition: border-color 0.3s;
 }
 
-.contato-btn-enviar:hover .contato-btn-circulo {
+.contato-btn-enviar:hover .contato-btn-circulo,
+.contato-btn-enviar:focus .contato-btn-circulo {
   border-color: #ffffff;
+}
+.contato-input-grupo:focus-within {
+  outline: 2px solid #ffffff;
+  border-radius: 16px;
+}
+ 
+
+@media (max-width: 768px) {
+  .contato {
+    padding: 40px 24px;
+    gap: 40px;
+  }
+
+  .contato-localizacao {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .contato-card {
+    width: 100%;
+    min-height: auto;
+    padding: 40px 24px;
+  }
+
+  .contato-card h2,
+  .contato-card p,
+  .contato-endereco-titulo span {
+    font-size: 22px;
+  }
+
+  .contato-mapa {
+    width: 100%;
+    min-height: 300px;
+  }
+
+  .contato-formulario {
+    height: auto;
+    padding: 24px;
+  }
+
+  .contato-form-topo {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .contato-form-titulo {
+    font-size: 24px;
+    border-right: none;
+    border-bottom: 2px solid #004346;
+    padding-right: 0;
+    padding-bottom: 8px;
+    white-space: normal;
+  }
+
+  .contato-form-subtitulo {
+    font-size: 16px;
+    white-space: normal;
+  }
+
+  .contato-input-grupo span {
+    font-size: 16px;
+  }
+
+ .contato-btn-enviar {
+    font-size: 20px;
+  }
 }
