@@ -32,7 +32,7 @@ function Contato() {
           </div>
         </div>
 
-      </div> {/* fechamento contato-localizacao */}
+      </div>
 
       <div className="contato-formulario">
         <div className="contato-form-topo">
